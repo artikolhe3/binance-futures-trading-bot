@@ -1,0 +1,1 @@
+#"Hey Python, treat me like a package!"

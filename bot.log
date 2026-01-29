@@ -1,0 +1,152 @@
+2026-01-27 14:18:10,858 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 14:21:05,828 - INFO - Order request: symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001, price=None
+2026-01-27 14:23:14,303 - INFO - Binance Futures Testnet client initialized
+2026-01-27 14:23:14,314 - INFO - Order request: symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001, price=None
+2026-01-27 14:23:14,315 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 14:23:14,315 - ERROR - Order failed: API Secret required for private endpoints
+2026-01-27 14:23:51,378 - INFO - Binance Futures Testnet client initialized
+2026-01-27 14:23:51,389 - INFO - Order request: symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001, price=None
+2026-01-27 14:23:51,395 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 14:23:51,396 - ERROR - Order failed: API Secret required for private endpoints
+2026-01-27 14:27:39,385 - INFO - Binance Futures Testnet client initialized
+2026-01-27 14:27:39,396 - INFO - Order request: symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001, price=None
+2026-01-27 14:27:39,396 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 14:27:40,465 - INFO - Order response: {}
+2026-01-27 14:27:40,465 - INFO - Order response: {'orderId': None, 'status': None, 'executedQty': None, 'avgPrice': None}
+2026-01-27 14:34:45,484 - INFO - Binance Futures Testnet client initialized
+2026-01-27 14:34:45,494 - INFO - Order request: symbol=BTCUSDT, side=SELL, type=LIMIT, quantity=0.001, price=70000.0
+2026-01-27 14:34:45,495 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-01-27 14:34:46,687 - INFO - Order response: {}
+2026-01-27 14:34:46,687 - INFO - Order response: {'orderId': None, 'status': None, 'executedQty': None, 'avgPrice': None}
+2026-01-27 14:56:52,362 - INFO - Binance Futures Testnet client initialized
+2026-01-27 14:56:52,372 - INFO - Order request: symbol=BTCUSDT, side=BUY, type=MARKET, quantity=0.001, price=None
+2026-01-27 14:56:52,373 - INFO - Order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 14:56:53,701 - INFO - Order response: {}
+2026-01-27 14:56:53,702 - INFO - Order response: {'orderId': None, 'status': None, 'executedQty': None, 'avgPrice': None}
+2026-01-27 20:01:47,874 | INFO | Order Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 20:01:49,154 | ERROR | Order Error: APIError(code=-2014): API-key format invalid.
+2026-01-27 20:03:49,978 | INFO | Order Request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-27 20:03:49,979 | ERROR | Order Error: API Secret required for private endpoints
+2026-01-28 11:09:42,202 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:09:44,103 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-01-28 11:11:04,410 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:11:05,866 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-01-28 11:13:15,522 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:13:16,576 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-01-28 11:14:54,420 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:14:55,505 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-01-28 11:34:06,826 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:34:07,369 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-01-28 11:35:51,525 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-01-28 11:35:52,144 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-01-28 11:36:38,484 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.005}
+2026-01-28 11:36:39,044 [INFO] bot.client: Order response: {'orderId': 12011148479, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'BalnB8tBGB73Xo4JOI0hRs', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.005', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1769580398016}
+2026-01-28 11:37:38,861 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.005, 'price': 26000.0, 'timeInForce': 'GTC'}
+2026-01-28 11:37:39,486 [ERROR] bot.client: API Error
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading_bot\bot\client.py", line 14, in place_order
+    response = self.client.futures_create_order(**params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python314-32\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4024): Limit price can't be lower than 84712.53.
+2026-01-28 11:38:17,464 [INFO] bot.client: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.005, 'price': 85000.0, 'timeInForce': 'GTC'}
+2026-01-28 11:38:18,038 [INFO] bot.client: Order response: {'orderId': 12011156026, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'X9mMLBFP2AnNywtPyUs4Dg', 'price': '85000.00', 'avgPrice': '0.00', 'origQty': '0.005', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1769580497010}
